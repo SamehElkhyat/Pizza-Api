@@ -5,6 +5,8 @@ import cors from 'cors'
 const port = 3009;
 
 const app = express();
+var compression = require('compression')
+app.use(compression())
 
 app.use(express.json())
 app.use(cors())
